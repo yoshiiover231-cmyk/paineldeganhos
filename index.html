@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Ads Review - Painel do Colaborador</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .panel { background: white; width: 350px; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+        .logo { font-weight: bold; font-size: 22px; color: #4285F4; margin-bottom: 20px; }
+        .balance-card { background: linear-gradient(135deg, #4285F4, #34A853); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .balance-label { font-size: 14px; opacity: 0.9; }
+        .balance-value { font-size: 32px; font-weight: bold; margin: 10px 0; }
+        .task-list { text-align: left; margin-bottom: 20px; }
+        .task-item { background: #f9f9f9; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        .btn-withdraw { background: #EA4335; color: white; border: none; width: 100%; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-withdraw:hover { background: #c53929; }
+        .status { font-size: 12px; color: #666; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="logo">Global Ads Review</div>
+        <div class="balance-card">
+            <div class="balance-label">Saldo Disponível</div>
+            <div class="balance-value">R$ <span id="balance">15.00</span></div>
+        </div>
+        <div class="task-list">
+            <div class="task-item">
+                <span>Tarefa #1042 - Validação</span>
+                <strong style="color: #34A853;">+ R$ 15,00</strong>
+            </div>
+            <div class="task-item" style="opacity: 0.5;">
+                <span>Tarefa #1043 - VIP (Bloqueada)</span>
+                <strong>R$ 100,00</strong>
+            </div>
+        </div>
+        <button class="btn-withdraw" onclick="alert('Erro de Sincronização: Sua conta precisa de ativação de nível para saques acima de R$ 50,00. Entre em contato com o supervisor.')">Solicitar Saque</button>
+        <div class="status">ID do Usuário: G-88293 | Status: Ativo</div>
+    </div>
+
+    <script>
+        // Aqui você pode mudar o valor do saldo manualmente no código para cada vítima
+        // Ou criar um campo simples de input escondido para alterar via URL.
+    </script>
+</body>
+</html>
